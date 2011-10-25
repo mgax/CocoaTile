@@ -12,4 +12,9 @@
     return self;
 }
 
++ (int)getAnswer
+{
+    return 13;
+}
+
 @end
