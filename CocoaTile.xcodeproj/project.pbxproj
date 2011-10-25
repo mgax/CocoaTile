@@ -6,14 +6,109 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3A35A59014570CC60093F3A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A35A58F14570CC60093F3A2 /* Cocoa.framework */; };
+		3A35A59A14570CC60093F3A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A35A59814570CC60093F3A2 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A35A58C14570CC60093F3A2 /* CocoaTileDriver.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTileDriver.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A35A58F14570CC60093F3A2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3A35A59214570CC60093F3A2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3A35A59314570CC60093F3A2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3A35A59414570CC60093F3A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A35A59714570CC60093F3A2 /* CocoaTileDriver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaTileDriver-Info.plist"; sourceTree = "<group>"; };
+		3A35A59914570CC60093F3A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A35A59B14570CC60093F3A2 /* CocoaTileDriver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaTileDriver-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A35A58914570CC60093F3A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A35A59014570CC60093F3A2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		3A35A57F14570B9F0093F3A2 = {
 			isa = PBXGroup;
 			children = (
+				3A35A59514570CC60093F3A2 /* CocoaTileDriver */,
+				3A35A58E14570CC60093F3A2 /* Frameworks */,
+				3A35A58D14570CC60093F3A2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		3A35A58D14570CC60093F3A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A35A58C14570CC60093F3A2 /* CocoaTileDriver.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A35A58E14570CC60093F3A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A35A58F14570CC60093F3A2 /* Cocoa.framework */,
+				3A35A59114570CC60093F3A2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A35A59114570CC60093F3A2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A35A59214570CC60093F3A2 /* AppKit.framework */,
+				3A35A59314570CC60093F3A2 /* CoreData.framework */,
+				3A35A59414570CC60093F3A2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3A35A59514570CC60093F3A2 /* CocoaTileDriver */ = {
+			isa = PBXGroup;
+			children = (
+				3A35A59614570CC60093F3A2 /* Supporting Files */,
+			);
+			path = CocoaTileDriver;
+			sourceTree = "<group>";
+		};
+		3A35A59614570CC60093F3A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A35A59714570CC60093F3A2 /* CocoaTileDriver-Info.plist */,
+				3A35A59814570CC60093F3A2 /* InfoPlist.strings */,
+				3A35A59B14570CC60093F3A2 /* CocoaTileDriver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A35A58B14570CC60093F3A2 /* CocoaTileDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A35A59C14570CC60093F3A2 /* Build configuration list for PBXNativeTarget "CocoaTileDriver" */;
+			buildPhases = (
+				3A35A58814570CC60093F3A2 /* Sources */,
+				3A35A58914570CC60093F3A2 /* Frameworks */,
+				3A35A58A14570CC60093F3A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaTileDriver;
+			productName = CocoaTileDriver;
+			productReference = 3A35A58C14570CC60093F3A2 /* CocoaTileDriver.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3A35A58114570B9F0093F3A2 /* Project object */ = {
@@ -26,12 +121,46 @@
 				en,
 			);
 			mainGroup = 3A35A57F14570B9F0093F3A2;
+			productRefGroup = 3A35A58D14570CC60093F3A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3A35A58B14570CC60093F3A2 /* CocoaTileDriver */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A35A58A14570CC60093F3A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A35A59A14570CC60093F3A2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A35A58814570CC60093F3A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A35A59814570CC60093F3A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A35A59914570CC60093F3A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3A35A58614570BA00093F3A2 /* Debug */ = {
@@ -46,6 +175,63 @@
 			};
 			name = Release;
 		};
+		3A35A59D14570CC60093F3A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaTileDriver/CocoaTileDriver-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaTileDriver/CocoaTileDriver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3A35A59E14570CC60093F3A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaTileDriver/CocoaTileDriver-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CocoaTileDriver/CocoaTileDriver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -57,6 +243,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3A35A59C14570CC60093F3A2 /* Build configuration list for PBXNativeTarget "CocoaTileDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A35A59D14570CC60093F3A2 /* Debug */,
+				3A35A59E14570CC60093F3A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
