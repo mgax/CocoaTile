@@ -7,8 +7,8 @@ def main():
                                'build/Release/CocoaTileDriver.bundle')
 
     CocoaTileDriver = objc.loadBundle("CocoaTileDriver", globals(), bundle_path)
-    WindowDriver = CocoaTileDriver.classNamed_("WindowDriver")
-    print WindowDriver.getAnswer()
+    AccessibilityElement = CocoaTileDriver.classNamed_("AccessibilityElement")
+    print AccessibilityElement.systemWide()
 
 if __name__ == '__main__':
     main()
