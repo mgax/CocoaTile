@@ -48,4 +48,9 @@
     return value;
 }
 
+- (AccessibilityElement*) attributeValueAsElementForName: (NSString*)name {
+    AXUIElementRef ref = (AXUIElementRef)[self attributeValueForName: name];
+    return [AccessibilityElement elementWithRef:ref];
+}
+
 @end
