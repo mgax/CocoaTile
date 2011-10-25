@@ -1,0 +1,3 @@
+@interface WindowDriver : NSObject
+
+@end

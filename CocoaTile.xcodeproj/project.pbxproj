@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A35A59014570CC60093F3A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A35A58F14570CC60093F3A2 /* Cocoa.framework */; };
 		3A35A59A14570CC60093F3A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A35A59814570CC60093F3A2 /* InfoPlist.strings */; };
+		3A35A5A11457106C0093F3A2 /* WindowDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A35A5A01457106C0093F3A2 /* WindowDriver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,8 @@
 		3A35A59714570CC60093F3A2 /* CocoaTileDriver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaTileDriver-Info.plist"; sourceTree = "<group>"; };
 		3A35A59914570CC60093F3A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A35A59B14570CC60093F3A2 /* CocoaTileDriver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaTileDriver-Prefix.pch"; sourceTree = "<group>"; };
+		3A35A59F1457106C0093F3A2 /* WindowDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowDriver.h; sourceTree = "<group>"; };
+		3A35A5A01457106C0093F3A2 /* WindowDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowDriver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,8 @@
 		3A35A57F14570B9F0093F3A2 = {
 			isa = PBXGroup;
 			children = (
+				3A35A59F1457106C0093F3A2 /* WindowDriver.h */,
+				3A35A5A01457106C0093F3A2 /* WindowDriver.m */,
 				3A35A59514570CC60093F3A2 /* CocoaTileDriver */,
 				3A35A58E14570CC60093F3A2 /* Frameworks */,
 				3A35A58D14570CC60093F3A2 /* Products */,
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A35A5A11457106C0093F3A2 /* WindowDriver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
