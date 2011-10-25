@@ -53,4 +53,8 @@
     return [AccessibilityElement elementWithRef:ref];
 }
 
+- (NSString*) attributeValueAsStringForName: (NSString*)name {
+    return (NSString*)[self attributeValueForName: name];
+}
+
 @end
