@@ -27,6 +27,13 @@
     return [AccessibilityElement elementWithRef:ref];
 }
 
+- (AccessibilityElement*) elementAtPositionX: (float)x Y: (float)y {
+    AXUIElementRef ref = nil;
+    AXError error = AXUIElementCopyElementAtPosition(elementRef, 100, 100, &ref);
+    NSAssert(error == 0, @"could not get element at coordinates");
+    return [AccessibilityElement elementWithRef: ref];
+}
+
 - (NSArray*) attributeNames {
     CFArrayRef names = nil;
     AXError error = AXUIElementCopyAttributeNames(elementRef, &names);
