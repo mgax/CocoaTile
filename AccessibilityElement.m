@@ -41,4 +41,11 @@
     return [NSArray arrayWithArray:(NSArray*)names];
 }
 
+- (CFTypeRef) attributeValueForName: (NSString*)name {
+    CFTypeRef value = nil;
+    AXError error = AXUIElementCopyAttributeValue(elementRef, (CFStringRef)name, &value);
+    NSAssert(error == 0, @"could not get element attribute value");
+    return value;
+}
+
 @end
