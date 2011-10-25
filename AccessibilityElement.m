@@ -27,4 +27,11 @@
     return [AccessibilityElement elementWithRef:ref];
 }
 
+- (NSArray*) attributeNames {
+    CFArrayRef names = nil;
+    AXError error = AXUIElementCopyAttributeNames(elementRef, &names);
+    NSAssert(error == 0, @"could not get element attribute names");
+    return [NSArray arrayWithArray:(NSArray*)names];
+}
+
 @end
